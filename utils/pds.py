@@ -14,7 +14,7 @@ def cf(lines, filePath) -> bool:
             if first_sheet:
                 new_df = df[i:i + lines]
             else:
-                new_df = pd.concat([df[1:5], df[i:i + lines]])
+                new_df = pd.concat([df[1:5], df[i:i + lines]])  # df[1:5]是公共表头信息
             first_sheet = False
             new_df.to_excel(r'D:\test{}.xls'.format(i), index=False)  # 需要存储拆分excel表格的目录
     return True
