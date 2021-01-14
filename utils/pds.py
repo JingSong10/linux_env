@@ -20,6 +20,7 @@ def cf(lines, filePath) -> bool:
     return True
 
 
+
 if __name__ == "__main__":
     file_path = r'D:\goods_templates.xls'
     cf(lines=1000, filePath=file_path)
